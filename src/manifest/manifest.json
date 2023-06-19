@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.15",
+  "id": "55560f20-0a0d-11ee-998e-41b7041cf968",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "wiggin77",
+    "websiteUrl": "https://github.com/wiggin77/quadrus",
+    "privacyUrl": "https://mattermost.com/privacy-policy/",
+    "termsOfUseUrl": "https://mattermost.com/terms-of-use/"
+  },
+  "name": {
+    "short": "Mattermost for MS Teams",
+    "full": "Mattermost app for Microsoft Teams"
+  },
+  "description": {
+    "short": "Mattermost for MS Teams",
+    "full": "Mattermost app for Microsoft Teams"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "f607c5e9-7175-44ee-ba14-10e33a7b4c91",
+      "name": "Mattermost",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/mattermostTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "douglauder.com",
+    "mattermost-pr-23776.test.mattermost.cloud/"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": true,
+  "webApplicationInfo": {
+    "id": "{{TAB_APP_ID}}",
+    "resource": "{{TAB_APP_URI}}"
+  }
+}
